@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Teatro Tecnológico</title>
+</head>
+
+<a href="https://www.tijuana.tecnm.mx/">
+  <img src="ITT.jpg" alt="itt" width="110" height="110">
+  </a>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/jquery.bootstrap.newsbox.min">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js\ie10-viewport-bug-workaround.js"></script>
+
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF90;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+    .center {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+.w3-lobster {
+  font-family: "Lobster", serif;
+}
+
+</style>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">Inicio</a> 
+  <a href="eventos.html">Eventos</a> 
+  <a class="active" href="rentascont.html">Reservaciones</a> 
+  <a href="clasesmusic.html">Talleres</a>
+  <a href="actcult.html">Acerca del teatro</a>
+</div>
+
+<div class="container">
+  <div class="w3-container w3-lobster">
+    <p class="w3-xxlarge">-Envíanos un mensaje-</p><br>
+  </div>
+</div>
+
+<div class="container">
+  <form action="enviar.php" method="post" class="form_contact">
+    <label for="fname">Nombre(s):</label>
+    <input type="text" id="fname" required name="nombres" placeholder="Nombres">
+    <br>
+
+    <label for="lname">Apellido(s):</label>
+    <input type="text" id="lname" required name="apellidos" placeholder="Apellidos">
+    <br>
+
+    <label for="lname">Escuela o Institución:</label>
+    <input type="text" id="esc" required name="escuela" placeholder="Institución">
+    <br>
+
+    <label for="lname">Fecha solicitada:</label>
+    <input type="date" id="fech" required name="fecha" placeholder="Fecha que solicita">
+    <br>
+
+    <label for="lname">Hora solicitada:</label>
+    <input type="time" id="hor" required name="hora" placeholder="Hora">
+    <br>
+
+    <label for="lname">Teléfono para contactar:</label>
+    <input type="text" pattern="[0-9]+" id="hor" required name="telefono" placeholder="Teléfono">
+    <br><br><br>
+
+    <label for="subject">Mensaje:</label>
+    <textarea id="subject" name="mensaje" placeholder="Escribe el mensaje.." style="height:50 px"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+    <br>
+  </form>
+</div>
+
+<br><br><br>
+
+<div class="container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.830593218794!2d-116.98987408568489!3d32.530671203814215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94876898fcd2d%3A0x47538c95862d8ad3!2sTeatro+Cala-F%C3%B3rnix!5e0!3m2!1ses!2smx!4v1555043434177!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<br><br>
+<h4>Contactanos al número: 01(664)607-84-00, Ext 190, Cel: (664)642-90-62</h4>
+
+<!-- Footer -->
+<div class="w3-container w3-black">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      </p>
+    </div>
+
+    <div class="col-sm-4">
+      <h5 align="center"> © 2019 | Instituto Tecnológico de Tijuana.</h5>
+      <p align="center"><a href="http://tectijuana.edu.mx/">Pagina Instituto Tecnológico de Tijuana</a></p>
+      <p align="center"><a href="http://tectijuana.edu.mx/actividades-extraescolares/">Actividades extraescolares</a></p>
+    </div>
+
+    <div class="col-sm-4">
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html> 
