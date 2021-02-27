@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EJERCICIO WHILE.</title>
+</head>
+
+<body>
+<p>Ingresa un numero.</p>
+<input id="numb">
+<button type="submit" onclick="myfunction()">Click</button>
+<p id="demo"></p>
+
+<script>
+	function myfunction(){
+		var x, text; 
+		x = document.getElementById("numb").value; 
+
+		for(num = 1; num <= 10; num++){ 
+		 	document.write(x + " x " + num + "= " + (x * num) + "<br>");
+		} 
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio en Clase 28 Febrero.</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script>
+	var x = ["BMW", "Ferrari", "Porshe"];
+	//var y = x[2];
+	//var x[0] = "Ford";  --- Sirve para modificar el valor del objeto x
+	//document.getElementById("demo").innerHTML = x; --- Desplegaria Ford, Ferrari, Porshe
+	//<ul> es igual a unorder list
+	//document.getElementById("demo").innerHTML = y;
+
+	var text;
+
+	text = "<ul>";
+	for (var i = 0; x.lenght; i++) {
+		text += "<li>" + x[i] + "</li>"; 
+	};
+
+	text += "</ul>";
+
+	document.getElementById("demo").innerHTML = text;
+
+	//x.push = ["chevy"]; sirve para guardar directamente en el objeto y lo coloca en la ultima posicion.
+</script>
+</body>
+</html>
